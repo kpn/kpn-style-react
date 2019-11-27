@@ -1,28 +1,29 @@
-name: Publish to npm
+name: Node.js Package
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [created]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: "contains(github.event.head_commit.message, 'bump')"
     steps:
-    - uses: actions/checkout@v1
-    - name: Set up NodeJS
-      uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-    - run: HUSKY_SKIP_INSTALL=1 yarn install
-    - run: yarn build
-    - run: yarn publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-    - uses: actions/setup-node@v1
-      with:
-        registry-url: 'https://npm.pkg.github.com'
-    - run: yarn publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - run: HUSKY_SKIP_INSTALL=1 npm install
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+          registry-url: https://registry.npmjs.org/
+      - run: npm build
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

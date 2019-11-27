@@ -3,10 +3,12 @@ import '!style-loader!css-loader!sass-loader!./index.scss'
 import { addDecorator, addParameters, configure } from '@storybook/react';
 
 import { jsxDecorator } from 'storybook-addon-jsx';
+import kpnTheme from './kpnTheme';
 
 addDecorator(jsxDecorator);
 addParameters({
   options: {
+    theme: kpnTheme,
     storySort: (a, b) =>
       a[1].kind === b[1].kind ? 0 : a[1].id.localeCompare(b[1].id, { numeric: true }),
   },

@@ -4,8 +4,7 @@ import { boolean, withKnobs } from "@storybook/addon-knobs";
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-const stories = storiesOf("Components", module)
-  .addDecorator(withKnobs);
+const stories = storiesOf("Components", module).addDecorator(withKnobs);
 
 stories.add("Tab", () => {
   const active = boolean("active", true);

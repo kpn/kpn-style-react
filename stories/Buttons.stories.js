@@ -42,8 +42,7 @@ const widthSelect = () => {
   return select(label, options, defaultValue);
 };
 
-const stories = storiesOf("Components.Buttons", module)
-  .addDecorator(withKnobs);
+const stories = storiesOf("Components.Buttons", module).addDecorator(withKnobs);
 
 stories.add("Button", () => {
   const disabled = boolean("disabled", false);

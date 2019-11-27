@@ -11,8 +11,7 @@ import { boolean, withKnobs } from "@storybook/addon-knobs";
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-const stories = storiesOf("Components.Cards", module)
-  .addDecorator(withKnobs);
+const stories = storiesOf("Components.Cards", module).addDecorator(withKnobs);
 
 stories.add("Basic Card", () => {
   const stretch = boolean("stretch", false);
@@ -54,13 +53,13 @@ stories.add("Card with Footer", () => {
           <CardFooter>
             <CardList>
               <li>
-                <a className="a">Sed ut perspiciatis</a>
+                <a href="#a">Sed ut perspiciatis</a>
               </li>
               <li>
-                <a className="a">Sed do eiusmod tempor</a>
+                <a href="#a">Sed do eiusmod tempor</a>
               </li>
               <li>
-                <a className="a">Odit aut fugit</a>
+                <a href="#a">Odit aut fugit</a>
               </li>
             </CardList>
           </CardFooter>

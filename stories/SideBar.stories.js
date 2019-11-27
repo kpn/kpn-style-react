@@ -10,8 +10,7 @@ import { boolean, withKnobs } from "@storybook/addon-knobs";
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-const stories = storiesOf("Layout", module)
-  .addDecorator(withKnobs);
+const stories = storiesOf("Layout", module).addDecorator(withKnobs);
 
 stories.add("Side Bar", () => (
   <SideBar fitLayout={false}>

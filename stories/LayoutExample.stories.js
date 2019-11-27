@@ -22,8 +22,7 @@ import { boolean, withKnobs } from "@storybook/addon-knobs";
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-const stories = storiesOf("Layout", module)
-  .addDecorator(withKnobs);
+const stories = storiesOf("Layout", module).addDecorator(withKnobs);
 
 stories.add("Layout Example", () => (
   <AppBody>
@@ -55,7 +54,7 @@ stories.add("Layout Example", () => (
       </TopBar>
       <SideBar>
         <div className="side-bar__action-bar">
-          <a className="side-bar__link">
+          <a href="#a" className="side-bar__link">
             <i className="ui-account"></i> John Doe
           </a>
           <button className="side-bar__close">Close</button>

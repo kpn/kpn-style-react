@@ -19,6 +19,7 @@
       "always",
       [
         "build",
+        "bump",
         "chore",
         "ci",
         "docs",

@@ -18,7 +18,8 @@
     "rebuild": "yarn run clean && yarn run clean:node_modules && yarn install && yarn run build",
     "storybook": "start-storybook -p 6006",
     "gh-deploy": "gh-pages -d storybook-static",
-    "prettier": "prettier --write \"src/**/*.js\" --write \"stories/**/*.js\""
+    "prettier": "prettier --write \"src/**/*.js\" --write \"stories/**/*.js\"",
+    "changelog": "standard-changelog"
   },
   "watch": {
     "build": {
@@ -64,6 +65,7 @@
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.2.0",
+    "standard-changelog": "^2.0.18",
     "storybook-react-router": "^1.0.7"
   },
   "lint-staged": {

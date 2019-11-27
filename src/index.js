@@ -13,6 +13,8 @@ import CardList from "./CardList";
 import CardTitle from "./CardTitle";
 import Collapse from "./Collapse";
 import Main from "./Main";
+import Mouseover from "./Mouseover";
+import MouseoverBody from "./MouseoverBody";
 import SideBar from "./SideBar";
 import SideBarLink from "./SideBarLink";
 import SideBarMenu from "./SideBarMenu";
@@ -48,6 +50,8 @@ export {
   CardTitle,
   Collapse,
   Main,
+  Mouseover,
+  MouseoverBody,
   SideBar,
   SideBarLink,
   SideBarMenu,

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/kpn-style-react/main.a67547994f859c044e6d.bundle.js",
+    "main.js.map": "/kpn-style-react/main.a67547994f859c044e6d.bundle.js.map",
+    "runtime~main.js": "/kpn-style-react/runtime~main.a67547994f859c044e6d.bundle.js",
+    "runtime~main.js.map": "/kpn-style-react/runtime~main.a67547994f859c044e6d.bundle.js.map",
+    "vendors~main.js": "/kpn-style-react/vendors~main.a67547994f859c044e6d.bundle.js",
+    "vendors~main.js.map": "/kpn-style-react/vendors~main.a67547994f859c044e6d.bundle.js.map",
+    "iframe.html": "/kpn-style-react/iframe.html",
+    "precache-manifest.e3f95bdc0d234f3b3dc344aa966f7a3f.js": "/kpn-style-react/precache-manifest.e3f95bdc0d234f3b3dc344aa966f7a3f.js",
+    "service-worker.js": "/kpn-style-react/service-worker.js",
+    "vendors~main.a67547994f859c044e6d.bundle.js.LICENSE": "/kpn-style-react/vendors~main.a67547994f859c044e6d.bundle.js.LICENSE"
+  },
+  "entrypoints": [
+    "runtime~main.a67547994f859c044e6d.bundle.js",
+    "vendors~main.a67547994f859c044e6d.bundle.js",
+    "main.a67547994f859c044e6d.bundle.js"
+  ]
+}

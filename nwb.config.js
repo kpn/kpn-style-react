@@ -3,7 +3,7 @@ module.exports = {
   npm: {
     esModules: true,
     umd: {
-      global: "kpn-react",
+      global: "kpn-style-react",
       externals: {
         react: "React"
       }

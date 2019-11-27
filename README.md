@@ -19,6 +19,7 @@ In your main scss file import:
 
 ```scss
 @import "~@kpn-style/bundle/bundle";
+@include font-face('kpn-ui-icons', normal, 400, '~@kpn-style/bundle/base/ui-icon', 'kpn-ui-icons');
 ```
 
 Read more in the [official docs](https://style.kpn.com/getting-started/quick-start)

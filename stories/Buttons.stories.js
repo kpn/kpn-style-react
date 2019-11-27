@@ -1,8 +1,7 @@
-import { Button, ButtonGroup } from "kpn-react";
+import { Button, ButtonGroup } from "kpn-style-react";
 import { boolean, select, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";
-import StoryRouter from "storybook-react-router";
 import { storiesOf } from "@storybook/react";
 
 const sizeSelect = () => {
@@ -44,8 +43,7 @@ const widthSelect = () => {
 };
 
 const stories = storiesOf("Components.Buttons", module)
-  .addDecorator(withKnobs)
-  .addDecorator(StoryRouter());
+  .addDecorator(withKnobs);
 
 stories.add("Button", () => {
   const disabled = boolean("disabled", false);

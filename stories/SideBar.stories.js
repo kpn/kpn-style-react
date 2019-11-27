@@ -4,16 +4,14 @@ import {
   SideBarLink,
   SideBarMenu,
   SideBarSubMenu
-} from "kpn-react";
+} from "kpn-style-react";
 import { boolean, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";
-import StoryRouter from "storybook-react-router";
 import { storiesOf } from "@storybook/react";
 
 const stories = storiesOf("Layout", module)
-  .addDecorator(withKnobs)
-  .addDecorator(StoryRouter());
+  .addDecorator(withKnobs);
 
 stories.add("Side Bar", () => (
   <SideBar fitLayout={false}>

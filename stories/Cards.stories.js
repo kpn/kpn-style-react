@@ -5,16 +5,14 @@ import {
   CardHeader,
   CardList,
   CardTitle
-} from "kpn-react";
+} from "kpn-style-react";
 import { boolean, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";
-import StoryRouter from "storybook-react-router";
 import { storiesOf } from "@storybook/react";
 
 const stories = storiesOf("Components.Cards", module)
-  .addDecorator(withKnobs)
-  .addDecorator(StoryRouter());
+  .addDecorator(withKnobs);
 
 stories.add("Basic Card", () => {
   const stretch = boolean("stretch", false);

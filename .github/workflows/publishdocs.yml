@@ -1,0 +1,27 @@
+name: Publish docs
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    if: "contains(github.event.head_commit.message, 'bump')"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Install dependencies
+      run: |
+        yarn install
+    - name: Deploy docs
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        yarn run build-storybook
+        yarn run gh-deploy --repo https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

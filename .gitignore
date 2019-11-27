@@ -112,3 +112,6 @@ es/
 lib/
 umd/
 storybook-static/
+
+# locks
+*.lock

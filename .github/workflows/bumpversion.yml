@@ -1,0 +1,39 @@
+name: Bump version
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, 'bump')"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Set up Python 3
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: Install dependencies
+      run: |
+        python --version
+        python -m pip install -U commitizen
+        yarn install
+    - name: Create bump
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git config --local push.followTags true
+        cz bump --yes
+        yarn run changelog
+        git commit -am "docs: updated CHANGELOG"
+        git tag
+    - name: Push changes
+      uses: Woile/github-push-action@master
+      with:
+        github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        tags: "true"

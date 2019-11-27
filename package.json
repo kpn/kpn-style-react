@@ -19,7 +19,9 @@
     "storybook": "start-storybook -p 6006",
     "gh-deploy": "gh-pages -d storybook-static",
     "prettier": "prettier --write \"src/**/*.js\" --write \"stories/**/*.js\"",
-    "changelog": "standard-changelog"
+    "changelog": "standard-changelog",
+    "test": "echo 'no tests yet'",
+    "lint": "eslint src/"
   },
   "watch": {
     "build": {

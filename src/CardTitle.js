@@ -11,7 +11,7 @@ const defaultProps = {
   tag: "div"
 };
 
-const CardTitle = ({className, tag: Tag, ...attributes}) => {
+const CardTitle = ({ className, tag: Tag, ...attributes }) => {
   const classes = classNames("card__title", className);
   return <Tag {...attributes} className={classes} />;
 };

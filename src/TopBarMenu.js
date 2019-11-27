@@ -11,7 +11,7 @@ const defaultProps = {
   tag: "ul"
 };
 
-const TopBarMenu = ({className, tag: Tag, ...attributes}) => {
+const TopBarMenu = ({ className, tag: Tag, ...attributes }) => {
   const classes = classNames("top-bar__menu", className);
   return <Tag {...attributes} className={classes} />;
 };

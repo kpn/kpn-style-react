@@ -4,15 +4,14 @@ import classNames from "classnames";
 
 const propTypes = {
   tag: PropTypes.node,
-  className: PropTypes.string,
+  className: PropTypes.string
 };
 
 const defaultProps = {
-  tag: "a",
+  tag: "a"
 };
 
-const TopBarLogo = ({className, tag: Tag, ...attributes}) => {
-
+const TopBarLogo = ({ className, tag: Tag, ...attributes }) => {
   const classes = classNames("top-bar__logo", className);
   return <Tag {...attributes} className={classes} />;
 };

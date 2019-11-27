@@ -19,7 +19,10 @@ const stories = storiesOf("Layout", module)
   .addDecorator(StoryRouter());
 
 stories.add("TopBar", () => (
-  <TopBar fitLayout={false} style={{ boxShadow: "1px 1px 2px rgba(0, 0, 0, .3)" }}>
+  <TopBar
+    fitLayout={false}
+    style={{ boxShadow: "1px 1px 2px rgba(0, 0, 0, .3)" }}
+  >
     <TopBarLogo>CT</TopBarLogo>
     <TopBarTitle>Campaigntool</TopBarTitle>
     <TopBarMenu>

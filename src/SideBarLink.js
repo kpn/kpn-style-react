@@ -33,7 +33,7 @@ const SideBarLink = ({
       ? "side-bar__link--active side-bar__link--expanded"
       : "side-bar__link--collapsed"
     : null;
-  console.log(expanded)
+
   const classes = classNames(
     "side-bar__link",
     active ? "side-bar__link--active" : null,
@@ -41,8 +41,8 @@ const SideBarLink = ({
     className
   );
   const onClick = () => {
-    setExpanded(!expanded)
-  }
+    setExpanded(!expanded);
+  };
   return <Tag onClick={onClick} {...attributes} className={classes} />;
 };
 

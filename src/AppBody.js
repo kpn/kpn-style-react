@@ -11,7 +11,7 @@ const defaultProps = {
   tag: "body"
 };
 
-const AppBody = ({className, tag: Tag, ...attributes}) => {
+const AppBody = ({ className, tag: Tag, ...attributes }) => {
   const classes = classNames("app-body", className);
   return <Tag {...attributes} className={classes} />;
 };

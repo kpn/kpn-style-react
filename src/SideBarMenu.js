@@ -11,7 +11,7 @@ const defaultProps = {
   tag: "ul"
 };
 
-const SideBarMenu = ({className, tag: Tag, ...attributes}) => {
+const SideBarMenu = ({ className, tag: Tag, ...attributes }) => {
   const classes = classNames("side-bar__menu", className);
   return <Tag {...attributes} className={classes} />;
 };

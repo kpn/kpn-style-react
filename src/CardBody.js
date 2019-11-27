@@ -11,7 +11,7 @@ const defaultProps = {
   tag: "div"
 };
 
-const CardBody = ({className, tag: Tag, ...attributes}) => {
+const CardBody = ({ className, tag: Tag, ...attributes }) => {
   const classes = classNames("card__body", className);
   return <Tag {...attributes} className={classes} />;
 };

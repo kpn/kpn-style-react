@@ -41,8 +41,8 @@ const TopBarLink = ({
     className
   );
   const onClick = () => {
-    setExpanded(!expanded)
-  }
+    setExpanded(!expanded);
+  };
   return <Tag onClick={onClick} {...attributes} className={classes} />;
 };
 

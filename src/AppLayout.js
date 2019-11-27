@@ -11,7 +11,7 @@ const defaultProps = {
   tag: "div"
 };
 
-const AppLayout = ({className, tag: Tag, ...attributes}) => {
+const AppLayout = ({ className, tag: Tag, ...attributes }) => {
   const classes = classNames("app-layout", className);
   return <Tag {...attributes} className={classes} />;
 };

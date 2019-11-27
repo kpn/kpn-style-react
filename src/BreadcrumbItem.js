@@ -11,7 +11,7 @@ const defaultProps = {
   tag: "li"
 };
 
-const BreadcrumbItem = ({className, tag: Tag, ...attributes}) => {
+const BreadcrumbItem = ({ className, tag: Tag, ...attributes }) => {
   const classes = classNames("breadcrumb__item", className);
   return <Tag {...attributes} className={classes} />;
 };

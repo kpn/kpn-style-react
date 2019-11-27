@@ -17,7 +17,6 @@ const stories = storiesOf("Layout", module)
 
 stories.add("Side Bar", () => (
   <SideBar fitLayout={false}>
-
     <SideBarMenu>
       <li>
         <SideBarLink active={boolean("active", true)}>Home</SideBarLink>

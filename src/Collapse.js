@@ -26,7 +26,7 @@ function Collapse({ children }) {
       )}
     </React.Fragment>
   );
-};
+}
 
 Collapse.propTypes = propTypes;
 

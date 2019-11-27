@@ -11,7 +11,7 @@ const defaultProps = {
   tag: "div"
 };
 
-const TopBarTitle = ({className, tag: Tag, ...attributes}) => {
+const TopBarTitle = ({ className, tag: Tag, ...attributes }) => {
   const classes = classNames("top-bar__title", className);
   return <Tag {...attributes} className={classes} />;
 };

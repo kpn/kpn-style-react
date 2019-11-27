@@ -7,25 +7,31 @@ const propTypes = {
   className: PropTypes.string,
   alignRight: PropTypes.bool,
   respond: PropTypes.bool,
-  reverse: PropTypes.bool,
-
+  reverse: PropTypes.bool
 };
 
 const defaultProps = {
   tag: "div",
   alignRight: false,
   respond: false,
-  reverse: false,
+  reverse: false
 };
 
-const ButtonGroup = ({className, tag: Tag, alignRight, respond, reverse, ...attributes}) => {
+const ButtonGroup = ({
+  className,
+  tag: Tag,
+  alignRight,
+  respond,
+  reverse,
+  ...attributes
+}) => {
   const classes = classNames(
     "button-group",
     alignRight ? "button-group--right" : null,
     respond ? "button-group--respond" : null,
     reverse ? "button-group--reverse" : null,
-    className,
-    );
+    className
+  );
   return <Tag {...attributes} className={classes} />;
 };
 

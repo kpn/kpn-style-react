@@ -1,20 +1,20 @@
 module.exports = {
-  type: 'react-component',
+  type: "react-component",
   npm: {
     esModules: true,
     umd: {
-      global: 'kpn-react',
+      global: "kpn-react",
       externals: {
-        react: 'React'
+        react: "React"
       }
     }
   },
   webpack: {
     rules: {
-      'sass-css': {
+      "sass-css": {
         modules: true,
-        localIdentName: '[name]__[local]__[hash:base64:5]'
+        localIdentName: "[name]__[local]__[hash:base64:5]"
       }
     }
   }
-}
+};

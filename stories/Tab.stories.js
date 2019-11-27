@@ -1,13 +1,11 @@
-import { Tab, TabItem, TabLink, TabMenu } from "kpn-react";
+import { Tab, TabItem, TabLink, TabMenu } from "kpn-style-react";
 import { boolean, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";
-import StoryRouter from "storybook-react-router";
 import { storiesOf } from "@storybook/react";
 
 const stories = storiesOf("Components", module)
-  .addDecorator(withKnobs)
-  .addDecorator(StoryRouter());
+  .addDecorator(withKnobs);
 
 stories.add("Tab", () => {
   const active = boolean("active", true);

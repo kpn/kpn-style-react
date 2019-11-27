@@ -1,10 +1,9 @@
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "kpn-react";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "kpn-style-react";
 
 import React from "react";
-import StoryRouter from "storybook-react-router";
 import { storiesOf } from "@storybook/react";
 
-const stories = storiesOf("Components", module).addDecorator(StoryRouter());
+const stories = storiesOf("Components", module);
 
 stories.add("Breadcrumb", () => (
   <Breadcrumb>

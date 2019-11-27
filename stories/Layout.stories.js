@@ -6,13 +6,12 @@ import {
   TitleBar,
   TitleBarTitle,
   TopBar
-} from "kpn-react";
+} from "kpn-style-react";
 
 import React from "react";
-import StoryRouter from "storybook-react-router";
 import { storiesOf } from "@storybook/react";
 
-const stories = storiesOf("Layout", module).addDecorator(StoryRouter());
+const stories = storiesOf("Layout", module);
 
 stories.add("Body and Layout", () => (
   <AppBody>

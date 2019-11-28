@@ -17,7 +17,7 @@ stories.add("Body and Layout", () => (
   <AppBody>
     <AppLayout>
       <TopBar>KPN</TopBar>
-      <SideBar>SideBar babe</SideBar>
+      <SideBar>This is SideBar</SideBar>
       <Main>
         <TitleBar>
           <TitleBarTitle>Layout</TitleBarTitle>

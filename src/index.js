@@ -1,3 +1,7 @@
+import Accordion from "./Accordion";
+import AccordionContent from "./AccordionContent";
+import AccordionItem from "./AccordionItem";
+import AccordionTitle from "./AccordionTitle";
 import AppBody from "./AppBody";
 import AppLayout from "./AppLayout";
 import Breadcrumb from "./Breadcrumb";
@@ -35,6 +39,10 @@ import TopBarMenu from "./TopBarMenu";
 import TopBarTitle from "./TopBarTitle";
 
 export {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTitle,
   AppBody,
   AppLayout,
   Breadcrumb,

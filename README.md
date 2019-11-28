@@ -4,6 +4,21 @@
 
 [![Github Actions](https://github.com/kpn/kpn-style-react/workflows/Test%20React%20App/badge.svg?style=flat-square)](https://github.com/kpn/kpn-style-react/actions)
 [![npm package][npm-badge]][npm]
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
+
+```js
+import { Button } from "kpn-style-react";
+
+<Button>KPN</Button>;
+```
+
+--------------
+
+**Documentation for react components**: [https://kpn.github.io/kpn-style-react/](https://kpn.github.io/kpn-style-react/?path=/story/welcome--to-kpn-style-react)
+
+**Documentation for styles**: [https://style.kpn.com/](https://kpn.github.io/kpn-style/)
+
+--------------
 
 ## Installation
 
@@ -38,9 +53,28 @@ Read more in the [official docs](https://style.kpn.com/getting-started/quick-sta
 Import components as you go
 
 ```js
-import { Button } from "kpn-style-react";
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  CardList,
+  CardTitle
+} from "kpn-style-react";
 
 <Button>KPN</Button>;
+
+<Card>
+  <CardHeader>
+    <CardTitle>Lorem ipsum</CardTitle>
+  </CardHeader>
+  <CardBody>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+    eiusmod tempor. Nemo enim ipsam voluptatem quia, voluptas sit
+    aspernatur aut, odit aut fugit.
+  </CardBody>
+</Card>
 ```
 
 ## Documentation
@@ -69,7 +103,13 @@ All contributions are welcome
 Notes:
 
 - This repo uses [conventional-commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- Conventional commits and prettier are enforced in git hooks.
 - Run your tests and eslint before pushing in order to avoid problems.
+
+```bash
+yarn run test
+yarn run lint
+```
 
 [npm-badge]: https://img.shields.io/npm/v/kpn-style-react?style=flat-square
 [npm]: https://www.npmjs.org/package/kpn-style-react

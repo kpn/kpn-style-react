@@ -111,5 +111,15 @@ yarn run test
 yarn run lint
 ```
 
+### Creating a new component
+
+All components follow the same approach, they must receive `tag` and `className`
+as a `prop`.
+You can use a script to create the backbone of your component:
+
+```bash
+./scripts/new-component Card
+```
+
 [npm-badge]: https://img.shields.io/npm/v/kpn-style-react?style=flat-square
 [npm]: https://www.npmjs.org/package/kpn-style-react

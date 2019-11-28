@@ -1,0 +1,32 @@
+if [[ $# -eq 0 ]] ; then
+    echo 'Please provide a component name'
+    echo 'Example: '
+    echo './scripts/new-component Card'
+    exit 0
+fi
+
+cat > src/$1.js <<- EOM
+import PropTypes from "prop-types";
+import React from "react";
+import classNames from "classnames";
+
+const propTypes = {
+  tag: PropTypes.node,
+  className: PropTypes.string
+};
+
+const defaultProps = {
+  tag: "${2:-div}"
+};
+
+const $1 = ({ className, tag: Tag, ...attributes }) => {
+  const classes = classNames("", className);
+  return <Tag {...attributes} className={classes} />;
+};
+
+$1.propTypes = propTypes;
+$1.defaultProps = defaultProps;
+
+export default $1;
+
+EOM

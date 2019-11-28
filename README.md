@@ -5,6 +5,7 @@
 [![Github Actions](https://github.com/kpn/kpn-style-react/workflows/Test%20React%20App/badge.svg?style=flat-square)](https://github.com/kpn/kpn-style-react/actions)
 [![npm package][npm-badge]][npm]
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
+![GitHub](https://img.shields.io/github/license/kpn/kpn-style-react?style=flat-square)
 
 ```js
 import { Button } from "kpn-style-react";

@@ -1,2 +1,19 @@
 @import "~@kpn-style/bundle/bundle";
 @include font-face('kpn-ui-icons', normal, 400, '~@kpn-style/bundle/base/ui-icon', 'kpn-ui-icons');
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #009900;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}

@@ -12,15 +12,17 @@
   "scripts": {
     "start": "start-storybook -p 9009",
     "build": "nwb build-react-component --copy-files",
-    "clean": "nwb clean-module",
+    "clean": "yarn clean:clean-module && yarn clean:node_modules && yarn clean:storybook-static",
+    "clean:clean-module": "nwb clean-module",
     "clean:node_modules": "rm -rf node_modules",
+    "clean:storybook-static": "rm -rf storybook-static",
     "build-storybook": "build-storybook",
-    "rebuild": "yarn run clean && yarn run clean:node_modules && yarn install && yarn run build",
+    "rebuild": "yarn run clean && yarn install && yarn run build",
     "storybook": "start-storybook -p 6006",
     "gh-deploy": "gh-pages -d storybook-static",
     "prettier": "prettier --write \"src/**/*.js\" --write \"stories/**/*.js\"",
     "changelog": "standard-changelog",
-    "test": "echo 'no tests yet'",
+    "test": "react-scripts test --env=jsdom",
     "lint": "eslint src/"
   },
   "watch": {
@@ -70,7 +72,8 @@
     "sass-loader": "^8.0.0",
     "standard-changelog": "^2.0.18",
     "storybook-addon-jsx": "^7.1.13",
-    "storybook-react-router": "^1.0.7"
+    "storybook-react-router": "^1.0.7",
+    "webpack": "4.41.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [

@@ -19,6 +19,11 @@ import Collapse from "./Collapse";
 import Main from "./Main";
 import Mouseover from "./Mouseover";
 import MouseoverBody from "./MouseoverBody";
+import Pagination from "./Pagination";
+import PaginationLink from "./PaginationLink";
+import PaginationPager from "./PaginationPager";
+import PaginationSelect from "./PaginationSelect";
+import PaginationSelectField from "./PaginationSelectField";
 import SideBar from "./SideBar";
 import SideBarLink from "./SideBarLink";
 import SideBarMenu from "./SideBarMenu";
@@ -60,6 +65,11 @@ export {
   Main,
   Mouseover,
   MouseoverBody,
+  Pagination,
+  PaginationLink,
+  PaginationPager,
+  PaginationSelect,
+  PaginationSelectField,
   SideBar,
   SideBarLink,
   SideBarMenu,

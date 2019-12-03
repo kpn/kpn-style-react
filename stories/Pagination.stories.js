@@ -5,15 +5,55 @@ import {
   PaginationSelect,
   PaginationSelectField
 } from "kpn-style-react";
-import { text, withKnobs } from "@storybook/addon-knobs";
+import { boolean, text, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import { updateKnob } from "./utils";
 
-const stories = storiesOf("Components", module).addDecorator(withKnobs);
+const stories = storiesOf("Components.Pagination", module).addDecorator(
+  withKnobs
+);
 
-stories.add("Pagination", () => {
+stories.add("Simple", () => {
+  const active = boolean("active", true);
+
+  return (
+    <Pagination>
+      <PaginationPager>
+        <li>
+          <PaginationLink direction="Prev"></PaginationLink>
+        </li>
+        <li>
+          <PaginationLink active={active}>1</PaginationLink>
+        </li>
+        <li>
+          <PaginationLink>2</PaginationLink>
+        </li>
+        <li>
+          <PaginationLink>3</PaginationLink>
+        </li>
+        <li>
+          <PaginationLink>4</PaginationLink>
+        </li>
+        <li>
+          <PaginationLink direction="Next"></PaginationLink>
+        </li>
+      </PaginationPager>
+      <PaginationSelectField>
+        Rows per page:
+        <PaginationSelect>
+          <option>5</option>
+          <option>25</option>
+          <option>50</option>
+          <option>100</option>
+        </PaginationSelect>
+      </PaginationSelectField>
+    </Pagination>
+  );
+});
+
+stories.add("With Behavior Logic", () => {
   const activePage = text("active", "1");
 
   const onClick = evt => {

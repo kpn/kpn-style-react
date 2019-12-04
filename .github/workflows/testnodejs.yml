@@ -14,9 +14,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Clean Stuff
+      run: |
+        yarn run clean:node_modules
+        yarn run clean:storybook-static
     - name: Install dependencies
       run: |
         HUSKY_SKIP_INSTALL=1 yarn install
+        yarn run clean:clean-module
     - name: Run tests
       run: |
         yarn run lint

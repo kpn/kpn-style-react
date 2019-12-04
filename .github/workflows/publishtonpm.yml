@@ -15,7 +15,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - run: HUSKY_SKIP_INSTALL=1 yarn install
+    - run: |
+        yarn run clean:node_modules
+        yarn run clean:storybook-static
+    - run: |
+        HUSKY_SKIP_INSTALL=1 yarn install
+        yarn run clean:clean-module
     - run: yarn build
     - name: Publish to NPM
       run: yarn publish --non-interactive --access=public

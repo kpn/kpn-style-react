@@ -1,4 +1,4 @@
-import { Mouseover, MouseoverBody } from "kpn-style-react";
+import { Mouseover, MouseoverBody } from "@kpn-style/react";
 import { boolean, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";

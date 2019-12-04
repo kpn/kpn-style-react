@@ -4,7 +4,7 @@ import {
   SideBarLink,
   SideBarMenu,
   SideBarSubMenu
-} from "kpn-style-react";
+} from "@kpn-style/react";
 import { boolean, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";

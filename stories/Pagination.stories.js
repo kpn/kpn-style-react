@@ -4,7 +4,7 @@ import {
   PaginationPager,
   PaginationSelect,
   PaginationSelectField
-} from "kpn-style-react";
+} from "@kpn-style/react";
 import { boolean, text, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";

@@ -4,7 +4,7 @@ const includePath = path.resolve(__dirname, "..");
 module.exports = {
   resolve: {
     alias: {
-      "kpn-style-react": path.resolve(__dirname, "../src")
+      "@kpn-style/react": path.resolve(__dirname, "../src")
     }
   },
   module: {

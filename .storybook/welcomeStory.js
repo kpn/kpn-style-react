@@ -13,9 +13,9 @@ storiesOf("Welcome", module).add("to kpn-style-react", () => (
         alt="Github Actions"
       />
     </a>{" "}
-    <a href="https://www.npmjs.org/package/kpn-style-react">
+    <a href="https://www.npmjs.org/package/@kpn-style/react">
       <img
-        src="https://img.shields.io/npm/v/kpn-style-react?style=flat-square"
+        src="https://img.shields.io/npm/v/@kpn-style/react?style=flat-square"
         alt="npm package"
       />
     </a>{" "}

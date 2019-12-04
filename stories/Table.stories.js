@@ -1,5 +1,5 @@
 import React from "react";
-import { Table } from "kpn-style-react";
+import { Table } from "@kpn-style/react";
 import { storiesOf } from "@storybook/react";
 import { withKnobs } from "@storybook/addon-knobs";
 

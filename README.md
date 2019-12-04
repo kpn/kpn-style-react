@@ -8,7 +8,7 @@
 ![GitHub](https://img.shields.io/github/license/kpn/kpn-style-react?style=flat-square)
 
 ```js
-import { Button } from "kpn-style-react";
+import { Button } from "@kpn-style/react";
 
 <Button>KPN</Button>;
 ```
@@ -62,7 +62,7 @@ import {
   CardHeader,
   CardList,
   CardTitle
-} from "kpn-style-react";
+} from "@kpn-style/react";
 
 <Button>KPN</Button>;
 

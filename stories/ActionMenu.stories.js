@@ -4,7 +4,7 @@ import {
   ActionMenuLink,
   ActionMenuList,
   ActionMenuTrigger
-} from "kpn-style-react";
+} from "@kpn-style/react";
 import { boolean, select, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";

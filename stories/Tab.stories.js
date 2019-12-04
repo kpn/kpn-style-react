@@ -1,4 +1,4 @@
-import { Tab, TabItem, TabLink, TabMenu } from "kpn-style-react";
+import { Tab, TabItem, TabLink, TabMenu } from "@kpn-style/react";
 import { boolean, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";

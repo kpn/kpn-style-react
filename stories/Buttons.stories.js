@@ -1,4 +1,4 @@
-import { Button, ButtonGroup } from "kpn-style-react";
+import { Button, ButtonGroup } from "@kpn-style/react";
 import { boolean, select, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";

@@ -1,4 +1,4 @@
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "kpn-style-react";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@kpn-style/react";
 
 import React from "react";
 import { storiesOf } from "@storybook/react";

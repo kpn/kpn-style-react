@@ -6,7 +6,7 @@ import {
   TitleBar,
   TitleBarTitle,
   TopBar
-} from "kpn-style-react";
+} from "@kpn-style/react";
 
 import React from "react";
 import { storiesOf } from "@storybook/react";

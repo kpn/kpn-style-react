@@ -18,7 +18,7 @@ jobs:
     - run: HUSKY_SKIP_INSTALL=1 yarn install
     - run: yarn build
     - name: Publish to NPM
-      run: yarn publish --non-interactive
+      run: yarn publish --non-interactive --access=public
       env:
         YARN_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     - uses: actions/setup-node@v1

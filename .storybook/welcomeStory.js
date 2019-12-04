@@ -32,7 +32,7 @@ storiesOf("Welcome", module).add("to kpn-style-react", () => (
     <h2>Installation</h2>
     <p>
       <pre>
-        <code>yarn add kpn-style kpn-style-react</code>
+        <code>yarn add @kpn-style/bundle @kpn-style/react</code>
       </pre>
     </p>
     <h2>Configuration</h2>

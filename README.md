@@ -24,7 +24,7 @@ import { Button } from "kpn-style-react";
 ## Installation
 
 ```bash
-yarn add kpn-style kpn-style-react
+yarn add @kpn-style/bundle @kpn-style/react
 ```
 
 This components require [kpn-style](https://github.com/kpn/kpn-style) in order to
@@ -122,5 +122,5 @@ You can use a script to create the backbone of your component:
 ./scripts/new-component Card
 ```
 
-[npm-badge]: https://img.shields.io/npm/v/kpn-style-react?style=flat-square
-[npm]: https://www.npmjs.org/package/kpn-style-react
+[npm-badge]: https://img.shields.io/npm/v/@kpn-style/react?style=flat-square
+[npm]: https://www.npmjs.org/package/@kpn-style/react

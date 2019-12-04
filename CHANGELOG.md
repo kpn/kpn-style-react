@@ -1,3 +1,12 @@
+# 0.10.0 (2019-12-04)
+
+
+### Bug Fixes
+
+* name corrected in docs from kpn-style-react to @kpn-style/react ([af1fda4](https://github.com/kpn/kpn-style-react/commit/af1fda406c086c54930a8bbd382baa1656c93504))
+
+
+
 # 0.9.0 (2019-12-04)
 
 

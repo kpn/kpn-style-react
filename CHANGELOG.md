@@ -1,3 +1,12 @@
+# 0.8.0 (2019-12-04)
+
+
+### Features
+
+* renamed package from kpn-style-react to @kpn-style/react ([2ce2af1](https://github.com/kpn/kpn-style-react/commit/2ce2af15ba8a8244d79ccf02ebcee1350f622e80))
+
+
+
 # [0.7.0](https://github.com/kpn/kpn-style-react/compare/v0.6.1...v0.7.0) (2019-12-03)
 
 

@@ -2,6 +2,11 @@ import Accordion from "./Accordion";
 import AccordionContent from "./AccordionContent";
 import AccordionItem from "./AccordionItem";
 import AccordionTitle from "./AccordionTitle";
+import ActionMenu from "./ActionMenu";
+import ActionMenuItem from "./ActionMenuItem";
+import ActionMenuLink from "./ActionMenuLink";
+import ActionMenuList from "./ActionMenuList";
+import ActionMenuTrigger from "./ActionMenuTrigger";
 import AppBody from "./AppBody";
 import AppLayout from "./AppLayout";
 import Breadcrumb from "./Breadcrumb";
@@ -48,6 +53,11 @@ export {
   AccordionContent,
   AccordionItem,
   AccordionTitle,
+  ActionMenu,
+  ActionMenuItem,
+  ActionMenuLink,
+  ActionMenuList,
+  ActionMenuTrigger,
   AppBody,
   AppLayout,
   Breadcrumb,

@@ -50,6 +50,7 @@ stories.add("Layout Example", () => (
               </TopBarActionMenu>
             </Collapse>
           </TopBarItem>
+          <TopBarItem trigger>Menu</TopBarItem>
         </TopBarMenu>
       </TopBar>
       <SideBar>

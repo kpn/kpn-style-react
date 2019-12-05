@@ -4,15 +4,21 @@ import classNames from "classnames";
 
 const propTypes = {
   tag: PropTypes.node,
-  className: PropTypes.string
+  className: PropTypes.string,
+  trigger: PropTypes.bool
 };
 
 const defaultProps = {
-  tag: "li"
+  tag: "li",
+  trigger: false
 };
 
-const TopBarItem = ({ className, tag: Tag, ...attributes }) => {
-  const classes = classNames("top-bar__item", className);
+const TopBarItem = ({ className, tag: Tag, trigger, ...attributes }) => {
+  const classes = classNames(
+    "top-bar__item",
+    trigger ? "top-bar__item--trigger" : null,
+    className
+  );
   return <Tag {...attributes} className={classes} />;
 };
 

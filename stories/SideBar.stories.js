@@ -1,6 +1,8 @@
 import {
   Collapse,
   SideBar,
+  SideBarActionMenu,
+  SideBarClose,
   SideBarLink,
   SideBarMenu,
   SideBarSubMenu
@@ -14,6 +16,10 @@ const stories = storiesOf("Layout", module).addDecorator(withKnobs);
 
 stories.add("Side Bar", () => (
   <SideBar fitLayout={false}>
+    <SideBarActionMenu>
+      <SideBarLink>Jon Doe</SideBarLink>
+      <SideBarClose />
+    </SideBarActionMenu>
     <SideBarMenu>
       <li>
         <SideBarLink active={boolean("active", true)}>Home</SideBarLink>

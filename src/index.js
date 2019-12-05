@@ -30,6 +30,8 @@ import PaginationPager from "./PaginationPager";
 import PaginationSelect from "./PaginationSelect";
 import PaginationSelectField from "./PaginationSelectField";
 import SideBar from "./SideBar";
+import SideBarActionMenu from "./SideBarActionMenu";
+import SideBarClose from "./SideBarClose";
 import SideBarLink from "./SideBarLink";
 import SideBarMenu from "./SideBarMenu";
 import SideBarSubMenu from "./SideBarSubMenu";
@@ -81,6 +83,8 @@ export {
   PaginationSelect,
   PaginationSelectField,
   SideBar,
+  SideBarActionMenu,
+  SideBarClose,
   SideBarLink,
   SideBarMenu,
   SideBarSubMenu,

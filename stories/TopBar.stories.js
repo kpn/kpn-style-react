@@ -42,6 +42,7 @@ stories.add("TopBar", () => (
           </TopBarActionMenu>
         </Collapse>
       </TopBarItem>
+      <TopBarItem trigger>Menu</TopBarItem>
     </TopBarMenu>
   </TopBar>
 ));

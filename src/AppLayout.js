@@ -4,15 +4,21 @@ import classNames from "classnames";
 
 const propTypes = {
   tag: PropTypes.node,
-  className: PropTypes.string
+  className: PropTypes.string,
+  activeSideBar: PropTypes.bool
 };
 
 const defaultProps = {
-  tag: "div"
+  tag: "div",
+  activeSideBar: false
 };
 
-const AppLayout = ({ className, tag: Tag, ...attributes }) => {
-  const classes = classNames("app-layout", className);
+const AppLayout = ({ className, tag: Tag, activeSideBar, ...attributes }) => {
+  const classes = classNames(
+    "app-layout",
+    activeSideBar ? "app-layout--active-side-bar" : null,
+    className
+  );
   return <Tag {...attributes} className={classes} />;
 };
 

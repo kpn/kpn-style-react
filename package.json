@@ -75,7 +75,7 @@
     "standard-changelog": "^2.0.18",
     "storybook-addon-jsx": "^7.1.13",
     "storybook-react-router": "^1.0.7",
-    "webpack": "4.41.0"
+    "webpack": "4.41.2"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [

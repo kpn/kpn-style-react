@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTitle
 } from "@kpn-style/react";
-import { boolean, manager, withKnobs } from "@storybook/addon-knobs";
+import { boolean, withKnobs } from "@storybook/addon-knobs";
 
 import React from "react";
 import { storiesOf } from "@storybook/react";

@@ -3,7 +3,7 @@ import React from "react";
 import classNames from "classnames";
 
 const propTypes = {
-  tag: PropTypes.node,
+  tag: PropTypes.elementType,
   className: PropTypes.string,
   children: PropTypes.node,
   "aria-label": PropTypes.string

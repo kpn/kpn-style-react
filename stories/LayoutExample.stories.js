@@ -4,6 +4,8 @@ import {
   Collapse,
   Main,
   SideBar,
+  SideBarActionMenu,
+  SideBarClose,
   SideBarLink,
   SideBarMenu,
   SideBarSubMenu,
@@ -63,17 +65,13 @@ stories.add("Layout Example", () => {
           </TopBarMenu>
         </TopBar>
         <SideBar>
-          <div className="side-bar__action-bar">
-            <a href="#a" className="side-bar__link">
-              <i className="ui-account"></i> John Doe
-            </a>
-            <button
-              className="side-bar__close"
-              onClick={() => updateKnob("activeSideBar", false)}
-            >
-              Close
-            </button>
-          </div>
+          <SideBarActionMenu>
+            <SideBarLink>
+              <i className="ui-account" /> Jon Doe
+            </SideBarLink>
+            <SideBarClose onClick={() => updateKnob("activeSideBar", false)} />
+          </SideBarActionMenu>
+
           <SideBarMenu>
             <li>
               <SideBarLink active={boolean("active", true)}>Home</SideBarLink>

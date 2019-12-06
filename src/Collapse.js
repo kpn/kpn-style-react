@@ -31,7 +31,7 @@ function Collapse({ children, expanded }) {
           ...child.props,
           collapsed,
           expanded: isExpanded,
-          setExpanded
+          setexpanded: setExpanded
         })
       )}
     </React.Fragment>

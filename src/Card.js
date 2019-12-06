@@ -3,7 +3,7 @@ import React from "react";
 import classNames from "classnames";
 
 const propTypes = {
-  tag: PropTypes.node,
+  tag: PropTypes.elementType,
   className: PropTypes.string,
   stretch: PropTypes.bool
 };

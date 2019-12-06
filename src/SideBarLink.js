@@ -3,12 +3,12 @@ import React from "react";
 import classNames from "classnames";
 
 const propTypes = {
-  tag: PropTypes.node,
+  tag: PropTypes.elementType,
   className: PropTypes.string,
   active: PropTypes.bool,
   collapsed: PropTypes.bool,
   expanded: PropTypes.bool,
-  setExpanded: PropTypes.func
+  setexpanded: PropTypes.func
 };
 
 const defaultProps = {
@@ -16,7 +16,7 @@ const defaultProps = {
   active: false,
   collapsed: false,
   expanded: false,
-  setExpanded: () => {}
+  setexpanded: () => {}
 };
 
 const SideBarLink = ({
@@ -25,7 +25,7 @@ const SideBarLink = ({
   active,
   collapsed,
   expanded,
-  setExpanded,
+  setexpanded,
   ...attributes
 }) => {
   const collapsedClass = collapsed
@@ -41,7 +41,7 @@ const SideBarLink = ({
     className
   );
   const onClick = () => {
-    setExpanded(!expanded);
+    setexpanded(!expanded);
   };
   return <Tag onClick={onClick} {...attributes} className={classes} />;
 };

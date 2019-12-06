@@ -3,7 +3,7 @@ import React from "react";
 import classNames from "classnames";
 
 const propTypes = {
-  tag: PropTypes.node,
+  tag: PropTypes.elementType,
   className: PropTypes.string,
   expanded: PropTypes.bool
 };
@@ -13,10 +13,17 @@ const defaultProps = {
   expanded: false
 };
 
-const SideBarSubMenu = ({ className, tag: Tag, expanded, ...attributes }) => {
+const SideBarSubMenu = ({
+  className,
+  tag: Tag,
+  expanded,
+  collapsed,
+  setexpanded,
+  ...attributes
+}) => {
   const classes = classNames(
     "side-bar__sub-menu",
-    expanded ? "side-bar__sub-menu--visible" : null,
+    collapsed && expanded ? "side-bar__sub-menu--visible" : null,
     className
   );
   return <Tag {...attributes} className={classes} />;

@@ -3,12 +3,12 @@ import React from "react";
 import classNames from "classnames";
 
 const propTypes = {
-  tag: PropTypes.node,
+  tag: PropTypes.elementType,
   className: PropTypes.string
 };
 
 const defaultProps = {
-  tag: "body"
+  tag: "div"
 };
 
 const AppBody = ({ className, tag: Tag, ...attributes }) => {

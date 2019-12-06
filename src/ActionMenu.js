@@ -8,7 +8,7 @@ const directions = Object.freeze({
 });
 
 const propTypes = {
-  tag: PropTypes.node,
+  tag: PropTypes.elementType,
   className: PropTypes.string,
   active: PropTypes.bool,
   direction: PropTypes.oneOf([directions.LEFT, directions.RIGHT])

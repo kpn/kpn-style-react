@@ -2,8 +2,8 @@ name: Publish docs
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - refs/tags/v*
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
         git pull origin master --tags
     - name: Deploy docs
       run: |
-        yarn run build-storybook
+        yarn run build-docs
         yarn run gh-deploy --repo https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
       env:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}

@@ -19,11 +19,13 @@ jobs:
         yarn run clean:node_modules
         yarn run clean:storybook-static
         HUSKY_SKIP_INSTALL=1 yarn install
-    - name: Deploy docs
+    - name: Configure repo
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git pull origin master --tags
+    - name: Deploy docs
+      run: |
         yarn run build-storybook
         yarn run gh-deploy --repo https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
       env:

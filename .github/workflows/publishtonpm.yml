@@ -15,6 +15,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+    - name: Configure repo
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git pull origin master --tags
     - run: |
         yarn run clean:node_modules
         yarn run clean:storybook-static

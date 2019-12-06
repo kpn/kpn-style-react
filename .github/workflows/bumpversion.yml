@@ -26,12 +26,13 @@ jobs:
         yarn run clean:node_modules
         yarn run clean:storybook-static
         HUSKY_SKIP_INSTALL=1 yarn install
-    - name: Create bump
+    - name: Configure repo
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git config --local push.followTags true
-        git pull --tags
+        git pull origin master --tags
+    - name: Create bump
+      run: |
         # Bump and create changelog
         cz bump --files-only
         yarn run changelog

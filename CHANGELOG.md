@@ -1,3 +1,12 @@
+# 0.16.0 (2019-12-06)
+
+
+### Bug Fixes
+
+* tag proptype ([f5c0b44](https://github.com/kpn/kpn-style-react/commit/f5c0b4415e1cb67f6aa05eaaba61b26fdfbc1f00))
+
+
+
 # 0.15.0 (2019-12-05)
 
 

@@ -11,21 +11,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Set up Python 3
-      uses: actions/setup-python@v1
-      with:
-        python-version: '3.x'
+    # - name: Set up Python 3
+    #   uses: actions/setup-python@v1
+    #   with:
+    #     python-version: '3.x'
     - name: Set up NodeJS
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - name: Install dependencies
+    - name: Global deps
       run: |
-        python --version
-        python -m pip install -U commitizen
-        yarn run clean:node_modules
-        yarn run clean:storybook-static
-        HUSKY_SKIP_INSTALL=1 yarn install
+        yarn global add lerna
+    - name: Clean
+      run: |
+        yarn run clean
     - name: Configure repo
       run: |
         git config --local user.email "action@github.com"
@@ -34,10 +33,11 @@ jobs:
     - name: Create bump
       run: |
         # Bump and create changelog
-        cz bump --files-only
-        yarn run changelog
-        cz bump --yes
+        lerna version
 
+        # cz bump --files-only
+        # yarn run changelog
+        # cz bump --yes
         # List tags
         git tag
     - name: Push changes

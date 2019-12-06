@@ -2,8 +2,8 @@ name: Publish to npm
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - refs/tags/*
 
 jobs:
   build:
@@ -15,22 +15,25 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+    - name: Global deps
+      run: |
+        yarn global add lerna
+    - name: Clean
+      run: |
+        yarn run clean
+    - name: Install dependencies
+      run: |
+        HUSKY_SKIP_INSTALL=1 yarn bootstrap
     - name: Configure repo
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git pull origin master --tags
-    - run: |
-        yarn run clean:node_modules
-        yarn run clean:storybook-static
-    - run: |
-        HUSKY_SKIP_INSTALL=1 yarn install
-        yarn run clean:clean-module
     - run: yarn build
     - name: Publish to NPM
-      run: yarn publish --non-interactive --access=public
+      run: lerna publish
       env:
         YARN_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-    - uses: actions/setup-node@v1
-      with:
-        registry-url: 'https://npm.pkg.github.com'
+    # - uses: actions/setup-node@v1
+    #   with:
+    #     registry-url: 'https://npm.pkg.github.com'

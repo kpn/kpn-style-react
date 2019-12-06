@@ -2,8 +2,8 @@ name: Publish docs
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - refs/tags/v*
 
 jobs:
   build:
@@ -14,11 +14,15 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+    - name: Global deps
+      run: |
+        yarn global add lerna
+    - name: Clean
+      run: |
+        yarn run clean
     - name: Install dependencies
       run: |
-        yarn run clean:node_modules
-        yarn run clean:storybook-static
-        HUSKY_SKIP_INSTALL=1 yarn install
+        HUSKY_SKIP_INSTALL=1 yarn bootstrap
     - name: Configure repo
       run: |
         git config --local user.email "action@github.com"
@@ -26,7 +30,7 @@ jobs:
         git pull origin master --tags
     - name: Deploy docs
       run: |
-        yarn run build-storybook
+        yarn run build-docs
         yarn run gh-deploy --repo https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
       env:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}

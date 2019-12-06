@@ -3,5 +3,6 @@ name = "cz_conventional_commits"
 version = "0.17.0"
 tag_format = "v$version"
 files = [
-    "package.json:version"
+    "packages/kpn-style-react/package.json:version",
+    "lerna.json:version"
 ]

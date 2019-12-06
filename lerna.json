@@ -1,0 +1,18 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "0.17.0",
+  "command": {
+    "version": {
+      "message": "bump: new version %s",
+      "conventionalCommits": true,
+      "noPush": true,
+      "noCommitHooks": true,
+      "yes": true
+    }
+  }
+
+}

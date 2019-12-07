@@ -25,6 +25,9 @@ jobs:
     - name: Clean
       run: |
         yarn run clean
+    - name: Install dependencies
+      run: |
+        HUSKY_SKIP_INSTALL=1 yarn bootstrap
     - name: Configure repo
       run: |
         git config --local user.email "action@github.com"

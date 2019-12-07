@@ -11,6 +11,7 @@
     "gh-deploy": "gh-pages -d docs",
     "clean": "lerna run clean && rm -rf docs node_modules",
     "lint": "lerna run lint",
+    "test": "lerna run test",
     "prettier": "lerna run prettier",
     "diff": "lerna diff",
     "publish": "lerna run publish"

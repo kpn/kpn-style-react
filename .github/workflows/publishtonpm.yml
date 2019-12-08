@@ -31,8 +31,11 @@ jobs:
         git pull origin master --tags
     - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.YARN_AUTH_TOKEN }}" > ~/.npmrc
     - run: yarn build
+    - name: Global deps
+      run: |
+        yarn global add lerna
     - name: Publish to NPM
-      run: ./node_modules/.bin/lerna publish from-package --no-verify-access
+      run: lerna publish from-package --no-verify-access
       env:
         YARN_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

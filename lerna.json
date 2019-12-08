@@ -9,8 +9,6 @@
     "version": {
       "message": "bump: new version %s",
       "conventionalCommits": true,
-      "noPush": true,
-      "noCommitHooks": true,
       "yes": true
     }
   }

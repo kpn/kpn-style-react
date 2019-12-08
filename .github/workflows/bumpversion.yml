@@ -33,11 +33,10 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git pull origin master --tags
-        git update-index --assume-unchanged .npmrc
     - name: Create bump
       run: |
         # Bump and create changelog
-        ./node_modules/.bin/lerna version
+        ./node_modules/.bin/lerna version --no-push --no-commit-hooks
 
         # cz bump --files-only
         # yarn run changelog

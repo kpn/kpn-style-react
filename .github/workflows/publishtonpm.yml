@@ -31,7 +31,7 @@ jobs:
         git pull origin master --tags
     - run: yarn build
     - name: Publish to NPM
-      run: ./node_modules/.bin/lerna publish from-package
+      run: ./node_modules/.bin/lerna publish from-package --no-verify-access
       env:
         YARN_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

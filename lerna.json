@@ -1,7 +1,5 @@
 {
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "npmClient": "yarn",
   "useWorkspaces": true,
   "version": "0.18.4",
@@ -10,6 +8,9 @@
       "message": "bump: new version %s",
       "conventionalCommits": true,
       "yes": true
+    },
+    "publish": {
+      "verifyAccess": false
     }
   }
 }

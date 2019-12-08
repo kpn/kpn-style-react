@@ -14,6 +14,22 @@ The functionality for the menu is also implemented.
 
 There are some examples for the routes.
 
+## Usage
+
+Initialize your project just by running any of the following commands
+
+### yarn
+
+```bash
+yarn create react-app my-app --template @kpn-style/cra-template-kpn-style-react
+```
+
+### npm
+
+```bash
+npm init react-app my-app --template @kpn-style/cra-template-kpn-style-react
+```
+
 ## Meaning of folders
 
 `components`: Any shared component or component that don't belong to the screens

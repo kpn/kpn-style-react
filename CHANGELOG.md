@@ -1,3 +1,19 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [0.18.0](https://github.com/kpn/kpn-style-react/compare/v0.17.0...v0.18.0) (2019-12-08)
+
+
+### Features
+
+* new create-react-app template for kpn ([24723c7](https://github.com/kpn/kpn-style-react/commit/24723c7d0927753d51e90191392aa576a59a32de))
+
+
+
+
+
 # 0.17.0 (2019-12-06)
 
 

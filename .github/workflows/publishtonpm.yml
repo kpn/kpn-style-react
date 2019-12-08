@@ -29,6 +29,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git pull origin master --tags
+    - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
     - run: yarn build
     - name: Publish to NPM
       run: ./node_modules/.bin/lerna publish from-package --no-verify-access

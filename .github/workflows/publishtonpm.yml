@@ -35,7 +35,7 @@ jobs:
       run: |
         yarn global add lerna
     - name: Publish to NPM
-      run: lerna publish from-package --no-verify-access
+      run: npx lerna publish from-package --no-verify-access
       env:
         YARN_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

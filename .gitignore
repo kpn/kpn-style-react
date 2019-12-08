@@ -118,3 +118,4 @@ storybook-static/
 package-lock.json
 
 docs
+.npmrc

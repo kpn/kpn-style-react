@@ -31,7 +31,7 @@ jobs:
         git pull origin master --tags
     - run: yarn build
     - name: Publish to NPM
-      run: lerna publish
+      run: yarn publish
       env:
         YARN_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     # - uses: actions/setup-node@v1

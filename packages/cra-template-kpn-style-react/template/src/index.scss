@@ -1,0 +1,6 @@
+@import 'node_modules/@kpn-style/bundle/bundle';
+@include font-face('kpn-ui-icons', normal, 400, '~@kpn-style/bundle/base/ui-icon', 'kpn-ui-icons');
+
+.app-layout__main {
+  min-height: 86vh;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@kpn-style/cra-template-kpn-style-react",
+  "version": "0.17.0",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "kpn"
+  ],
+  "description": "The base template for Create React App with KPN Styles components.",
+  "main": "template.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kpn/kpn-style-react.git",
+    "directory": "packages/cra-template"
+  },
+  "scripts": {
+    "prettier": "prettier --write \"template/**/*.js\""
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "bugs": {
+    "url": "https://github.com/kpn/kpn-style-react/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "nonInteractive": true
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}

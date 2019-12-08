@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@kpn-style/bundle": "^1.15.0",
+    "@kpn-style/react": "^0.15.0",
+    "@reach/router": "^1.2.0",
+    "node-sass": "^4.13.0",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/user-event": "^7.1.2"
+  }
+}

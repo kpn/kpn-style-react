@@ -53,6 +53,9 @@ import PaginationLink from "./PaginationLink";
 import PaginationPager from "./PaginationPager";
 import PaginationSelect from "./PaginationSelect";
 import PaginationSelectField from "./PaginationSelectField";
+import Pitch from "./Pitch";
+import PitchBody from "./PitchBody";
+import PitchTitle from "./PitchTitle";
 import Row from "./Row";
 import SideBar from "./SideBar";
 import SideBarActionMenu from "./SideBarActionMenu";
@@ -134,6 +137,9 @@ export {
   PaginationPager,
   PaginationSelect,
   PaginationSelectField,
+  Pitch,
+  PitchBody,
+  PitchTitle,
   Row,
   SideBar,
   SideBarActionMenu,

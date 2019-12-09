@@ -9,6 +9,10 @@ import ActionMenuList from "./ActionMenuList";
 import ActionMenuTrigger from "./ActionMenuTrigger";
 import AppBody from "./AppBody";
 import AppLayout from "./AppLayout";
+import Block from "./Block";
+import BlockBody from "./BlockBody";
+import BlockLink from "./BlockLink";
+import BlockTitle from "./BlockTitle";
 import Breadcrumb from "./Breadcrumb";
 import BreadcrumbItem from "./BreadcrumbItem";
 import BreadcrumbLink from "./BreadcrumbLink";
@@ -64,6 +68,10 @@ export {
   ActionMenuTrigger,
   AppBody,
   AppLayout,
+  Block,
+  BlockBody,
+  BlockLink,
+  BlockTitle,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,

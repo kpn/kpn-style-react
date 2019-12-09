@@ -25,6 +25,7 @@ import CardHeader from "./CardHeader";
 import CardList from "./CardList";
 import CardTitle from "./CardTitle";
 import CheckList from "./CheckList";
+import Col from "./Col";
 import Collapse from "./Collapse";
 import Container from "./Container";
 import Main from "./Main";
@@ -35,6 +36,7 @@ import PaginationLink from "./PaginationLink";
 import PaginationPager from "./PaginationPager";
 import PaginationSelect from "./PaginationSelect";
 import PaginationSelectField from "./PaginationSelectField";
+import Row from "./Row";
 import SideBar from "./SideBar";
 import SideBarActionMenu from "./SideBarActionMenu";
 import SideBarClose from "./SideBarClose";
@@ -84,6 +86,7 @@ export {
   CardList,
   CardTitle,
   CheckList,
+  Col,
   Collapse,
   Container,
   Main,
@@ -94,6 +97,7 @@ export {
   PaginationPager,
   PaginationSelect,
   PaginationSelectField,
+  Row,
   SideBar,
   SideBarActionMenu,
   SideBarClose,

@@ -63,6 +63,9 @@ import TabMenu from "./TabMenu";
 import Table from "./Table";
 import TitleBar from "./TitleBar";
 import TitleBarTitle from "./TitleBarTitle";
+import Tooltip from "./Tooltip";
+import TooltipBody from "./TooltipBody";
+import TooltipTrigger from "./TooltipTrigger";
 import TopBar from "./TopBar";
 import TopBarActionMenu from "./TopBarActionMenu";
 import TopBarItem from "./TopBarItem";
@@ -137,6 +140,9 @@ export {
   TabMenu,
   TitleBar,
   TitleBarTitle,
+  Tooltip,
+  TooltipBody,
+  TooltipTrigger,
   TopBar,
   TopBarActionMenu,
   TopBarItem,

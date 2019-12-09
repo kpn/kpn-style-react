@@ -4,7 +4,9 @@ import {
   CardFooter,
   CardHeader,
   CardList,
-  CardTitle
+  CardTitle,
+  Col,
+  Row
 } from "@kpn-style/react";
 import { boolean, withKnobs } from "@storybook/addon-knobs";
 
@@ -17,8 +19,8 @@ stories.add("Basic Card", () => {
   const stretch = boolean("stretch", false);
 
   return (
-    <div className="row">
-      <div className="col col--4">
+    <Row>
+      <Col xs={4}>
         <Card stretch={stretch}>
           <CardHeader>
             <CardTitle>Lorem ipsum</CardTitle>
@@ -29,8 +31,8 @@ stories.add("Basic Card", () => {
             aspernatur aut, odit aut fugit.
           </CardBody>
         </Card>
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 });
 

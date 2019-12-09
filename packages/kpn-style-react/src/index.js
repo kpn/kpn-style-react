@@ -28,6 +28,12 @@ import CheckList from "./CheckList";
 import Col from "./Col";
 import Collapse from "./Collapse";
 import Container from "./Container";
+import Content from "./Content";
+import ContentBody from "./ContentBody";
+import ContentFooter from "./ContentFooter";
+import ContentHeader from "./ContentHeader";
+import ContentList from "./ContentList";
+import ContentTitle from "./ContentTitle";
 import FormFeedback from "./FormFeedback";
 import FormGroup from "./FormGroup";
 import FormGroupActionButton from "./FormGroupActionButton";
@@ -96,6 +102,12 @@ export {
   Col,
   Collapse,
   Container,
+  Content,
+  ContentBody,
+  ContentFooter,
+  ContentHeader,
+  ContentList,
+  ContentTitle,
   FormFeedback,
   FormGroup,
   FormGroupActionButton,

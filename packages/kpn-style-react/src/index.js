@@ -9,6 +9,7 @@ import ActionMenuList from "./ActionMenuList";
 import ActionMenuTrigger from "./ActionMenuTrigger";
 import AppBody from "./AppBody";
 import AppLayout from "./AppLayout";
+import Backdrop from "./Backdrop";
 import Block from "./Block";
 import BlockBody from "./BlockBody";
 import BlockLink from "./BlockLink";
@@ -42,6 +43,9 @@ import Input from "./Input";
 import Label from "./Label";
 import LabelFor from "./LabelFor";
 import Main from "./Main";
+import Modal from "./Modal";
+import ModalBody from "./ModalBody";
+import ModalClose from "./ModalClose";
 import Mouseover from "./Mouseover";
 import MouseoverBody from "./MouseoverBody";
 import Pagination from "./Pagination";
@@ -83,6 +87,7 @@ export {
   ActionMenuTrigger,
   AppBody,
   AppLayout,
+  Backdrop,
   Block,
   BlockBody,
   BlockLink,
@@ -116,6 +121,9 @@ export {
   Label,
   LabelFor,
   Main,
+  Modal,
+  ModalBody,
+  ModalClose,
   Mouseover,
   MouseoverBody,
   Pagination,

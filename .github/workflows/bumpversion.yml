@@ -36,7 +36,7 @@ jobs:
     - name: Create bump
       run: |
         # Bump and create changelog
-        npx lerna version --no-push --no-commit-hooks
+        npx lerna version --no-push --no-commit-hooks --conventional-commits --yes
 
         # cz bump --files-only
         # yarn run changelog

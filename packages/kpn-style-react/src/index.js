@@ -35,6 +35,12 @@ import ContentFooter from "./ContentFooter";
 import ContentHeader from "./ContentHeader";
 import ContentList from "./ContentList";
 import ContentTitle from "./ContentTitle";
+import Dialog from "./Dialog";
+import DialogBody from "./DialogBody";
+import DialogClose from "./DialogClose";
+import DialogFooter from "./DialogFooter";
+import DialogHeader from "./DialogHeader";
+import DialogTitle from "./DialogTitle";
 import FormFeedback from "./FormFeedback";
 import FormGroup from "./FormGroup";
 import FormGroupActionButton from "./FormGroupActionButton";
@@ -119,6 +125,12 @@ export {
   ContentHeader,
   ContentList,
   ContentTitle,
+  Dialog,
+  DialogBody,
+  DialogClose,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
   FormFeedback,
   FormGroup,
   FormGroupActionButton,

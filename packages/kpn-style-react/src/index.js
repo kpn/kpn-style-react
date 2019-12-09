@@ -28,6 +28,13 @@ import CheckList from "./CheckList";
 import Col from "./Col";
 import Collapse from "./Collapse";
 import Container from "./Container";
+import FormFeedback from "./FormFeedback";
+import FormGroup from "./FormGroup";
+import FormGroupActionButton from "./FormGroupActionButton";
+import FormGroupInput from "./FormGroupInput";
+import Input from "./Input";
+import Label from "./Label";
+import LabelFor from "./LabelFor";
 import Main from "./Main";
 import Mouseover from "./Mouseover";
 import MouseoverBody from "./MouseoverBody";
@@ -89,6 +96,13 @@ export {
   Col,
   Collapse,
   Container,
+  FormFeedback,
+  FormGroup,
+  FormGroupActionButton,
+  FormGroupInput,
+  Input,
+  Label,
+  LabelFor,
   Main,
   Mouseover,
   MouseoverBody,

@@ -20,6 +20,7 @@ import CardFooter from "./CardFooter";
 import CardHeader from "./CardHeader";
 import CardList from "./CardList";
 import CardTitle from "./CardTitle";
+import CheckList from "./CheckList";
 import Collapse from "./Collapse";
 import Main from "./Main";
 import Mouseover from "./Mouseover";
@@ -73,6 +74,7 @@ export {
   CardHeader,
   CardList,
   CardTitle,
+  CheckList,
   Collapse,
   Main,
   Mouseover,

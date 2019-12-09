@@ -9,6 +9,10 @@ import ActionMenuList from "./ActionMenuList";
 import ActionMenuTrigger from "./ActionMenuTrigger";
 import AppBody from "./AppBody";
 import AppLayout from "./AppLayout";
+import Block from "./Block";
+import BlockBody from "./BlockBody";
+import BlockLink from "./BlockLink";
+import BlockTitle from "./BlockTitle";
 import Breadcrumb from "./Breadcrumb";
 import BreadcrumbItem from "./BreadcrumbItem";
 import BreadcrumbLink from "./BreadcrumbLink";
@@ -20,7 +24,9 @@ import CardFooter from "./CardFooter";
 import CardHeader from "./CardHeader";
 import CardList from "./CardList";
 import CardTitle from "./CardTitle";
+import CheckList from "./CheckList";
 import Collapse from "./Collapse";
+import Container from "./Container";
 import Main from "./Main";
 import Mouseover from "./Mouseover";
 import MouseoverBody from "./MouseoverBody";
@@ -62,6 +68,10 @@ export {
   ActionMenuTrigger,
   AppBody,
   AppLayout,
+  Block,
+  BlockBody,
+  BlockLink,
+  BlockTitle,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
@@ -73,7 +83,9 @@ export {
   CardHeader,
   CardList,
   CardTitle,
+  CheckList,
   Collapse,
+  Container,
   Main,
   Mouseover,
   MouseoverBody,

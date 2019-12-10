@@ -10,6 +10,10 @@ import ActionMenuTrigger from "./ActionMenuTrigger";
 import AppBody from "./AppBody";
 import AppLayout from "./AppLayout";
 import Backdrop from "./Backdrop";
+import Banner from "./Banner";
+import BannerBody from "./BannerBody";
+import BannerSubTitle from "./BannerSubTitle";
+import BannerTitle from "./BannerTitle";
 import Block from "./Block";
 import BlockBody from "./BlockBody";
 import BlockLink from "./BlockLink";
@@ -41,14 +45,34 @@ import DialogClose from "./DialogClose";
 import DialogFooter from "./DialogFooter";
 import DialogHeader from "./DialogHeader";
 import DialogTitle from "./DialogTitle";
+import Footer from "./Footer";
+import FooterBody from "./FooterBody";
+import FooterInlineList from "./FooterInlineList";
+import FooterLink from "./FooterLink";
+import FooterList from "./FooterList";
+import FooterLogo from "./FooterLogo";
 import FormFeedback from "./FormFeedback";
 import FormGroup from "./FormGroup";
 import FormGroupActionButton from "./FormGroupActionButton";
 import FormGroupInput from "./FormGroupInput";
 import Input from "./Input";
+import Jumbotron from "./Jumbotron";
+import JumbotronBody from "./JumbotronBody";
+import JumbotronTitle from "./JumbotronTitle";
 import Label from "./Label";
 import LabelFor from "./LabelFor";
 import Main from "./Main";
+import MegaMenu from "./MegaMenu";
+import MegaMenuActionBar from "./MegaMenuActionBar";
+import MegaMenuClose from "./MegaMenuClose";
+import MegaMenuGroup from "./MegaMenuGroup";
+import MegaMenuItem from "./MegaMenuItem";
+import MegaMenuLink from "./MegaMenuLink";
+import MegaMenuLogo from "./MegaMenuLogo";
+import MegaMenuMenu from "./MegaMenuMenu";
+import MegaMenuPrimary from "./MegaMenuPrimary";
+import MegaMenuSecondary from "./MegaMenuSecondary";
+import MegaMenuSubMenu from "./MegaMenuSubMenu";
 import Modal from "./Modal";
 import ModalBody from "./ModalBody";
 import ModalClose from "./ModalClose";
@@ -86,6 +110,8 @@ import TopBarLink from "./TopBarLink";
 import TopBarLogo from "./TopBarLogo";
 import TopBarMenu from "./TopBarMenu";
 import TopBarTitle from "./TopBarTitle";
+import WebBody from "./WebBody";
+import WebLayout from "./WebLayout";
 
 export {
   Accordion,
@@ -100,6 +126,10 @@ export {
   AppBody,
   AppLayout,
   Backdrop,
+  Banner,
+  BannerBody,
+  BannerSubTitle,
+  BannerTitle,
   Block,
   BlockBody,
   BlockLink,
@@ -131,14 +161,34 @@ export {
   DialogFooter,
   DialogHeader,
   DialogTitle,
+  Footer,
+  FooterBody,
+  FooterInlineList,
+  FooterLink,
+  FooterList,
+  FooterLogo,
   FormFeedback,
   FormGroup,
   FormGroupActionButton,
   FormGroupInput,
   Input,
+  Jumbotron,
+  JumbotronBody,
+  JumbotronTitle,
   Label,
   LabelFor,
   Main,
+  MegaMenu,
+  MegaMenuActionBar,
+  MegaMenuClose,
+  MegaMenuGroup,
+  MegaMenuItem,
+  MegaMenuLink,
+  MegaMenuLogo,
+  MegaMenuMenu,
+  MegaMenuPrimary,
+  MegaMenuSecondary,
+  MegaMenuSubMenu,
   Modal,
   ModalBody,
   ModalClose,
@@ -175,5 +225,7 @@ export {
   TopBarLink,
   TopBarLogo,
   TopBarMenu,
-  TopBarTitle
+  TopBarTitle,
+  WebBody,
+  WebLayout
 };

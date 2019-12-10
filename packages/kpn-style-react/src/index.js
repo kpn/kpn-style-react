@@ -41,6 +41,12 @@ import DialogClose from "./DialogClose";
 import DialogFooter from "./DialogFooter";
 import DialogHeader from "./DialogHeader";
 import DialogTitle from "./DialogTitle";
+import Footer from "./Footer";
+import FooterBody from "./FooterBody";
+import FooterInlineList from "./FooterInlineList";
+import FooterLink from "./FooterLink";
+import FooterList from "./FooterList";
+import FooterLogo from "./FooterLogo";
 import FormFeedback from "./FormFeedback";
 import FormGroup from "./FormGroup";
 import FormGroupActionButton from "./FormGroupActionButton";
@@ -147,6 +153,12 @@ export {
   DialogFooter,
   DialogHeader,
   DialogTitle,
+  Footer,
+  FooterBody,
+  FooterInlineList,
+  FooterLink,
+  FooterList,
+  FooterLogo,
   FormFeedback,
   FormGroup,
   FormGroupActionButton,

@@ -2,6 +2,11 @@ import {
   AppBody,
   AppLayout,
   Collapse,
+  Footer,
+  FooterBody,
+  FooterInlineList,
+  FooterLink,
+  FooterLogo,
   Main,
   SideBar,
   SideBarActionMenu,
@@ -106,6 +111,38 @@ stories.add("App Example", () => {
             <p>Extra content</p>
           </div>
         </Main>
+        <Footer>
+          <FooterBody>
+            <FooterInlineList>
+              <li>
+                <FooterLink>Lorem ipsum</FooterLink>
+              </li>
+              <li>
+                <FooterLink>Dolor sit amet</FooterLink>
+              </li>
+              <li>
+                <FooterLink>Consectetur</FooterLink>
+              </li>
+            </FooterInlineList>
+            <FooterInlineList separated>
+              <li>
+                <FooterLink>Lorem ipsum</FooterLink>
+              </li>
+              <li>
+                <FooterLink>Dolor sit amet</FooterLink>
+              </li>
+              <li>
+                <FooterLink>Consectetur</FooterLink>
+              </li>
+            </FooterInlineList>
+            <FooterLogo>
+              <img
+                src="https://style.kpn.com/dummy/logo-kpn-white.png"
+                alt="kpn"
+              />
+            </FooterLogo>
+          </FooterBody>
+        </Footer>
       </AppLayout>
     </AppBody>
   );

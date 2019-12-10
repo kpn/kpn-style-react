@@ -1,5 +1,9 @@
 import {
   Container,
+  Footer,
+  FooterBody,
+  FooterLink,
+  FooterList,
   Jumbotron,
   JumbotronBody,
   JumbotronTitle,
@@ -123,6 +127,21 @@ stories.add("Landing Example", () => {
             </Pitch>
           </div>
         </Main>
+        <Footer>
+          <FooterBody>
+            <FooterList>
+              <dt>
+                <FooterLink>Lorem ipsum</FooterLink>
+              </dt>
+              <dt>
+                <FooterLink>Dolor sit amet</FooterLink>
+              </dt>
+              <dt>
+                <FooterLink>Consectetur</FooterLink>
+              </dt>
+            </FooterList>
+          </FooterBody>
+        </Footer>
       </WebLayout>
     </WebBody>
   );

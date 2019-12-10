@@ -10,6 +10,10 @@ import ActionMenuTrigger from "./ActionMenuTrigger";
 import AppBody from "./AppBody";
 import AppLayout from "./AppLayout";
 import Backdrop from "./Backdrop";
+import Banner from "./Banner";
+import BannerBody from "./BannerBody";
+import BannerSubTitle from "./BannerSubTitle";
+import BannerTitle from "./BannerTitle";
 import Block from "./Block";
 import BlockBody from "./BlockBody";
 import BlockLink from "./BlockLink";
@@ -122,6 +126,10 @@ export {
   AppBody,
   AppLayout,
   Backdrop,
+  Banner,
+  BannerBody,
+  BannerSubTitle,
+  BannerTitle,
   Block,
   BlockBody,
   BlockLink,

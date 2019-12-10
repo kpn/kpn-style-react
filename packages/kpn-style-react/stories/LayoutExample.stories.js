@@ -27,7 +27,7 @@ import { updateKnob } from "./utils";
 
 const stories = storiesOf("Layout", module).addDecorator(withKnobs);
 
-stories.add("Layout Example", () => {
+stories.add("App Example", () => {
   const activeSideBar = boolean("activeSideBar", false);
 
   return (

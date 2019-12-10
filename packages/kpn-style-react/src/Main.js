@@ -5,17 +5,20 @@ import classNames from "classnames";
 const propTypes = {
   tag: PropTypes.elementType,
   className: PropTypes.string,
-  fitLayout: PropTypes.bool
+  fitLayout: PropTypes.bool,
+  web: PropTypes.bool,
 };
 
 const defaultProps = {
   tag: "main",
-  fitLayout: true
+  fitLayout: true,
+  web: false
 };
 
-const Main = ({ className, tag: Tag, fitLayout, ...attributes }) => {
+const Main = ({ className, tag: Tag, fitLayout, web,...attributes }) => {
+  const layoutClass = web ? "web-layout__main" : "app-layout__main";
   const classes = classNames(
-    fitLayout ? "app-layout__main" : null,
+    fitLayout ? layoutClass : null,
     "main",
     className
   );

@@ -1,6 +1,6 @@
 {
   "name": "@kpn-style/react",
-  "version": "0.18.20",
+  "version": "0.18.21",
   "description": "ui React components for kpn-styles",
   "main": "lib/index.js",
   "module": "es/index.js",

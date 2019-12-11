@@ -14,8 +14,8 @@ import {
 } from "@kpn-style/react";
 import React, { useState } from "react";
 
-import Home from "screens/Home";
-import Information from "screens/Information";
+import Home from "pages/Home";
+import Information from "pages/Information";
 import { Router } from "@reach/router";
 import SideBarLinkActive from "components/router/SideBarLinkActive";
 import TopBarLinkActive from "components/router/TopBarLinkActive";

@@ -22,7 +22,7 @@ export default create({
   inputBorder: 'silver',
   inputTextColor: 'rgb(51, 51, 51)',
 
-  brandTitle: 'KPN THEME',
+  brandTitle: 'KPN Style React',
   brandUrl: 'https://kpn.com',
   brandImage: 'https://style.kpn.com/static/media/logo-kpn.77e7f164.png',
 });

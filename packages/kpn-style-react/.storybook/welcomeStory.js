@@ -1,7 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 
-storiesOf("Welcome", module).add("to kpn-style-react", () => (
+storiesOf("1 Welcome", module).add("to kpn-style-react", () => (
   <div>
     <h1>
       Welcome to{" "}
@@ -74,4 +74,4 @@ storiesOf("Welcome", module).add("to kpn-style-react", () => (
       </code>
     </pre>
   </div>
-));
+), { options: { showPanel: false } });

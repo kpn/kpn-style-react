@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/kpn/kpn-style-react/compare/v0.18.21...v1.0.0) (2019-12-11)
+
+
+### Features
+
+* updated kpn-style react to latest version ([7a50237](https://github.com/kpn/kpn-style-react/commit/7a5023725c632e78a47ad875daab306070ac5c06))
+
+
+
+
+
 ## 0.18.21 (2019-12-10)
 
 **Note:** Version bump only for package @kpn-style/cra-template-kpn-style-react

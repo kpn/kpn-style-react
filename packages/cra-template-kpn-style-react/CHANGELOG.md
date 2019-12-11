@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/kpn/kpn-style-react/compare/v1.0.0...v1.0.1) (2019-12-11)
+
+
+### Bug Fixes
+
+* boolean is passed properly to SideBarLink ([b80805d](https://github.com/kpn/kpn-style-react/commit/b80805d349ba16419ec0363c43dfdebd31035395))
+
+
+
+
+
 # [1.0.0](https://github.com/kpn/kpn-style-react/compare/v0.18.21...v1.0.0) (2019-12-11)
 
 

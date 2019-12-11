@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@kpn-style/bundle": "^1.15.0",
-    "@kpn-style/react": "^0.15.0",
+    "@kpn-style/react": "^1.0.0",
     "@reach/router": "^1.2.0",
     "node-sass": "^4.13.0",
     "@testing-library/react": "^9.3.2",

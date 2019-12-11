@@ -30,13 +30,13 @@ storiesOf("Welcome", module).add("to kpn-style-react", () => (
       src="https://img.shields.io/github/license/kpn/kpn-style-react?style=flat-square"
     />
     <h2>Installation</h2>
-    <p>
+    <p className="p">
       <pre>
         <code>yarn add @kpn-style/bundle @kpn-style/react</code>
       </pre>
     </p>
     <h2>Configuration</h2>
-    <p>
+    <p className="p">
       You'll need to import the css or the scss from kpn-style. In your main
       scss file kpn-styles :
       <pre>
@@ -48,14 +48,30 @@ storiesOf("Welcome", module).add("to kpn-style-react", () => (
       </pre>
     </p>
     <h2>Information</h2>
-    <p>
+    <p className="p">
       For more information about setting up, contributin to this repo check the{" "}
       <a href="https://github.com/kpn/kpn-style-react">README</a> in github
     </p>
     <h2>Contributing</h2>
-    <p>
+    <p className="p">
       Check the{" "}
       <a href="https://github.com/kpn/kpn-style-react">Github repository</a>
     </p>
+    <h2>Initializing an app</h2>
+    <p className="p">
+      Initialize your project just by running any of the following commands
+    </p>
+    <h3>yarn</h3>
+    <pre>
+      <code>
+        yarn create react-app my-app --template @kpn-style/cra-template-kpn-style-react
+      </code>
+    </pre>
+    <h3>npm</h3>
+    <pre>
+      <code>
+      bash npm init react-app my-app --template @kpn-style/cra-template-kpn-style-react
+      </code>
+    </pre>
   </div>
 ));

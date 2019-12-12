@@ -38,7 +38,7 @@ const Progress = ({
         <div className="progress-bar__value" style={{ width: `${value}%` }} />
         {text && <div className="progress-bar__text">{text}</div>}
       </div>
-      {!!children && <>{children}</>}
+      {!!children && <React.Fragment>{children}</React.Fragment>}
     </div>
   );
 };

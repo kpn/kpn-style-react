@@ -41,7 +41,7 @@ const Spinner = ({
     <div {...attributes} className={classes}>
       {!hidden && text && <div className="progress-spinner__text">{text}</div>}
 
-      {!!children && <>{children}</>}
+      {!!children && <React.Fragment>{children}</React.Fragment>}
     </div>
   );
 };

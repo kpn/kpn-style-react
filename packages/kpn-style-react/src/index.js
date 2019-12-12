@@ -94,6 +94,7 @@ import SideBarClose from "./SideBarClose";
 import SideBarLink from "./SideBarLink";
 import SideBarMenu from "./SideBarMenu";
 import SideBarSubMenu from "./SideBarSubMenu";
+import Spinner from "./Spinner";
 import Tab from "./Tab";
 import TabItem from "./TabItem";
 import TabLink from "./TabLink";
@@ -211,6 +212,7 @@ export {
   SideBarLink,
   SideBarMenu,
   SideBarSubMenu,
+  Spinner,
   Tab,
   TabItem,
   Table,

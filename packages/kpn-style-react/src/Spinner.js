@@ -2,8 +2,13 @@ import PropTypes from "prop-types";
 import React from "react";
 import classNames from "classnames";
 
+const colors = {
+  WHITE: "white"
+};
+
 const propTypes = {
-  value: PropTypes.number,
+  color: PropTypes.oneOf([colors.WHITE]),
+
   children: PropTypes.node,
   text: PropTypes.string,
   blocking: PropTypes.bool,
@@ -12,38 +17,37 @@ const propTypes = {
 };
 
 const defaultProps = {
-  value: 0,
   blocking: false,
   hidden: false
 };
 
-const Progress = ({
+const Spinner = ({
   className,
-  value,
   text,
   blocking,
   hidden,
   children,
+  color,
   ...attributes
 }) => {
   const classes = classNames(
-    "progress-bar",
-    blocking && !hidden ? "progress-bar--blocking" : null,
+    !hidden ? "progress-spinner" : null,
+    blocking ? "progress-spinner--blocking" : null,
+    color ? `progress-spinner--${color}` : null,
     className
   );
 
   return (
     <div {...attributes} className={classes}>
-      <div className={classNames("progress-bar__meter", hidden ? "hidden" : null)}>
-        <div className="progress-bar__value" style={{ width: `${value}%` }} />
-        {text && <div className="progress-bar__text">{text}</div>}
-      </div>
+      {!hidden && text && <div className="progress-spinner__text">{text}</div>}
+
       {!!children && <>{children}</>}
     </div>
   );
 };
 
-Progress.propTypes = propTypes;
-Progress.defaultProps = defaultProps;
+Spinner.propTypes = propTypes;
+Spinner.defaultProps = defaultProps;
+Spinner.colors = colors;
 
-export default Progress;
+export default Spinner;

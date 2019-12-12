@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/kpn/kpn-style-react/compare/v1.0.2...v1.1.0) (2019-12-12)
+
+
+### Features
+
+* new ProgressBar component ([d15e0b3](https://github.com/kpn/kpn-style-react/commit/d15e0b3b6720032665a4f01ac138e0dc629ee586))
+* new Spinner component ([4745e41](https://github.com/kpn/kpn-style-react/commit/4745e410d571fd7c65cb3ab334e43f872c816b9f))
+
+
+
+
+
 ## [1.0.2](https://github.com/kpn/kpn-style-react/compare/v1.0.1...v1.0.2) (2019-12-11)
 
 

@@ -86,6 +86,7 @@ import PaginationSelectField from "./PaginationSelectField";
 import Pitch from "./Pitch";
 import PitchBody from "./PitchBody";
 import PitchTitle from "./PitchTitle";
+import ProgressBar from "./ProgressBar";
 import Row from "./Row";
 import SideBar from "./SideBar";
 import SideBarActionMenu from "./SideBarActionMenu";
@@ -202,6 +203,7 @@ export {
   Pitch,
   PitchBody,
   PitchTitle,
+  ProgressBar,
   Row,
   SideBar,
   SideBarActionMenu,

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/kpn/kpn-style-react/compare/v1.1.0...v1.1.1) (2019-12-12)
+
+
+### Bug Fixes
+
+* using React Fragment with no shortcut ([dc8cf43](https://github.com/kpn/kpn-style-react/commit/dc8cf43123143123932e3e64b249a92b505a5968))
+
+
+
+
+
 # [1.1.0](https://github.com/kpn/kpn-style-react/compare/v1.0.2...v1.1.0) (2019-12-12)
 
 

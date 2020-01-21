@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/kpn/kpn-style-react/compare/v1.1.1...v1.2.0) (2020-01-21)
+
+
+### Features
+
+* new Notification component ([a234880](https://github.com/kpn/kpn-style-react/commit/a234880d042537e30723c54d19aa4f8ba39d41bd))
+
+
+
+
+
 ## [1.1.1](https://github.com/kpn/kpn-style-react/compare/v1.1.0...v1.1.1) (2019-12-12)
 
 

@@ -78,6 +78,10 @@ import ModalBody from "./ModalBody";
 import ModalClose from "./ModalClose";
 import Mouseover from "./Mouseover";
 import MouseoverBody from "./MouseoverBody";
+import Notification from "./Notification";
+import NotificationBody from "./NotificationBody";
+import NotificationClose from "./NotificationClose";
+import NotificationHeader from "./NotificationHeader";
 import Pagination from "./Pagination";
 import PaginationLink from "./PaginationLink";
 import PaginationPager from "./PaginationPager";
@@ -196,6 +200,10 @@ export {
   ModalClose,
   Mouseover,
   MouseoverBody,
+  Notification,
+  NotificationBody,
+  NotificationClose,
+  NotificationHeader,
   Pagination,
   PaginationLink,
   PaginationPager,

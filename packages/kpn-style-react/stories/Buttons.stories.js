@@ -16,8 +16,8 @@ const sizeSelect = () => {
   return select(label, options, defaultValue);
 };
 
-const typeSelect = () => {
-  const label = "type";
+const kindSelect = () => {
+  const label = "kind";
   const options = {
     none: null,
     secondary: "secondary",
@@ -50,7 +50,7 @@ stories.add("Button", () => {
   const spinner = boolean("spinner", false);
 
   const size = sizeSelect();
-  const type = typeSelect();
+  const kind = kindSelect();
   const width = widthSelect();
   return (
     <Button
@@ -58,7 +58,7 @@ stories.add("Button", () => {
       fluid={fluid}
       size={size}
       spinner={spinner}
-      type={type}
+      kind={kind}
       width={width}
     >
       Hello

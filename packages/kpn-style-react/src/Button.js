@@ -9,7 +9,7 @@ const propTypes = {
   fluid: PropTypes.bool,
   size: PropTypes.oneOf(["small", "large"]),
   spinner: PropTypes.bool,
-  type: PropTypes.oneOf(["secondary", "link"]),
+  kind: PropTypes.oneOf(["secondary", "link"]),
   width: PropTypes.oneOf([1, 2, 3, 4])
 };
 
@@ -27,7 +27,7 @@ const Button = ({
   fluid,
   size,
   spinner,
-  type,
+  kind,
   width,
   ...attributes
 }) => {
@@ -38,7 +38,7 @@ const Button = ({
     spinner ? "button--spinner" : null,
     size ? `button--${size}` : null,
     width ? `button--${width}` : null,
-    type ? `button--${type}` : null,
+    kind ? `button--${kind}` : null,
     className
   );
 

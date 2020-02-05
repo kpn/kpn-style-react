@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/kpn/kpn-style-react/compare/v1.2.0...v1.2.1) (2020-02-05)
+
+
+### Bug Fixes
+
+* attr in Button type renamed to kind ([a2ea096](https://github.com/kpn/kpn-style-react/commit/a2ea096ce9331b2ea6f67803bb3b3d6f0d7f593d))
+
+
+
+
+
 # [1.2.0](https://github.com/kpn/kpn-style-react/compare/v1.1.1...v1.2.0) (2020-01-21)
 
 

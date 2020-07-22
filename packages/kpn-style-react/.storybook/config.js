@@ -14,6 +14,9 @@ addParameters({
       a[1].kind === b[1].kind
         ? 0
         : a[1].id.localeCompare(b[1].id, { numeric: true })
+  },
+  jsx: {
+    showDefaultProps: false
   }
 });
 
